@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Burger to Pancake",
+  "version": "0.1",
+  "description": "Change all occurences of 'burger' to 'pancake'.",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
